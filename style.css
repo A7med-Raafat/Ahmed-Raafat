@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+header{
+  background-color: #f0f0f0;
+  width: 100%;
+  
+  z-index: 999;/*كشفافيه عشان اخليه هو اللي فوق مفيش حاجه تغطي عليه لما يجي عليها*/
+  
+  position: fixed; /*عشان اخليه مهما نزلت واتحركت ف الموقع فهو ثابت وباين معايا*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+
+.logo{
+  text-decoration: none; /*عشان اشيل الخط من تحت الروابط*/
+  color: #3a6cf4;
+  text-transform: uppercase;/*لتحويل الحروف كلها لاحرف كابيتال كبيره*/
+font-weight: 700;
+font-size: 1.8em;
+}
+
+.navigation a{
+  text-decoration: none;
+  color: #3a6cf4;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 30px;
+}
+
+.navigation a:hover{
+  color: #601cfc;
+}
+
+section{
+  padding: 100px 200px;
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(ahmed-raafat-programming-hero.png) no-repeat;
+    background-size: cover; /*عشان الصوره تبقي مظبوطه ك خلفية مش محطوطه كده وخلاص */
+    background-position: center; /*عشان اخليه منصف الشاشه*/
+    background-attachment: fixed ; /*عشان اخليه متركز لما انزل تلا انحرك ف الموقع الصوره تختفي واحده واحده لما انزل عنها بس تبقي ثابته ف مكانها برضو خاصيه حلوه كده يعني*/
+  
+}
+
+.main h2{
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 450;
+}
+
+.main h2 span{
+  display: inline-block;
+  margin-top: 10px;
+  color: #4e9eff;
+  font-size:3em;
+  font-weight: 600;
+}
+
+.main h3{
+  color: #fff;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-btn{
+  color: #fff;
+  background-color: #3a6cf4;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block; /*عشان بادينج ومارجين مبيضتغلوش علي ان لاين ف انا بحول الانكور لبلوك*/
+  margin-bottom: 40px;
+  padding: 0.9375em 2.1875em;
+  border-radius: 15px;
+  letter-spacing: 1px;
+}
+
+.main-btn:hover{
+  background-color: #0a49f6;
+  transform: scale(1.1); /*بقوله الحجم يكبر بمقدار كذا */
+  transition: 0.7s ease; /*مدة التحول عشان يبقي بطيئ احس بالتغيير البطيئ الجمالي مش فجأه*/
+}
+
+.social-icons a{
+  color: #fff;
+  font-size:1.7em;
+  padding-right:30px ;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  color: #3a6cf4;
+  font-size:2.2em;
+  font-weight:800;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /*طريقة الترصيص*/
+  flex-wrap: wrap;
+}
+
+.card{
+  background-color: #fff;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1, 1, 1, 15%); /*عشان يعمل ظل ويبرز الكارت أول خانه فوق وتحت التانيه يمين وشمال لو شمال -5*/
+/*الخانه التالته هي زي شفافية الظل او انتشاره يكون علي متسع قد ايه؟ والخانه الرابعه اللون والالفا دي الاوبيسيتي الشفافيه*/
+  padding: 25px;
+  margin: 15px;
+}
+
+.card:hover{
+ transform: translateY(-20px) scale(1.1);
+  transition: 0.7s ease;
+}
+
+.icon{
+  color: #3a6cf4;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info{
+  text-align: center;
+}
+
+.info h3{
+  color: #3a6cf4;
+  font-size: 1.2em;
+  font-weight:700;
+  margin: 10px;
+}
+
+.projects {
+  background-color:#000016 ;
+  
+}
+
+.projects content{
+  margin-top: 30px;
+}
+
+.projects-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  min-height: 15em;
+  width: 26em;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 20px;
+  transition: 0.6s ease;
+}
+
+.projects-card:hover{
+  transform: scale(1.1);
+}
+
+.projects-card:hover .p-img{
+  opacity: 0.8;
+}
+
+.p-img img{
+  width: 100%;
+}
+
+.p-info{
+  padding: 1em;
+}
+
+.p-category{
+  font-size: 0.8 em;
+  color: #000;
+}
+
+.p-title{
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.more-details{
+  text-decoration: none;
+  color: #3a6cf4;
+}
+
+.more-details:hover{
+  color: #601cfc;
+}
+
+.telme{
+  color: black;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.telme:hover{
+  text-decoration: underline;
+  color: #3a6cf4;
+}
+
+.contact .icon{
+  font-size: 4.5em;
+}
+
+.contact .info h3 {
+  color: #000;
+} 
+
+.footer{
+  background-color: #000016;
+  color: #fff;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-title{
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.footer-title span{
+  color: #3a6cf4;
+}
+
+.footer .social-icons a{
+  font-size: 1.4em;
+  padding: 0 12px 0 0 ;
+}
+
+
+@media (max-width:1023px){
+  header{
+    padding: 12px 20px;
+  }
+  
+  .navigation a{
+    padding-left: 10px;
+  }
+  
+  .title{
+    font-size: 1.8em;
+  }
+  
+  section{
+    padding: 80px 20px;
+  }
+  
+  .main-content h2{
+    font-size: 1em;
+  }
+  
+  .main-content h3{
+    font-size: 1.6em ;
+  }
+  
+  .content{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+@media (max-width:641px){
+  body{
+    font-size: 12px;
+  }
+  
+  .main-content h2{
+    font-size: 0.8em;
+  }
+  
+  .main-content h3{
+    font-size: 1.4em;
+  }
+  
+}
+
+@media (max-width:300px){
+  body{
+    font-size: 10px;
+  }
+  
+  
+}
+/* Projects section matching the main portfolio version. */
+.projects{background:#000016}.project-grid{align-items:stretch;gap:24px}.projects-card{background:#fff;border:1px solid #fff;min-height:15em;width:calc(50% - 24px);max-width:30em;overflow:hidden;border-radius:14px;margin:12px;transition:.35s ease}.projects-card:hover{transform:translateY(-8px);box-shadow:0 18px 35px rgba(0,0,0,.3)}.project-visual{height:210px;position:relative;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;gap:3px}.project-visual i{font-size:2.2rem;margin-bottom:5px}.project-visual strong{font-size:1.45rem;letter-spacing:2px}.project-visual span{font-size:.75rem;color:#d5eaff}.project-visual b{position:absolute;top:14px;right:14px;background:rgba(255,255,255,.9);color:#3a6cf4;border-radius:6px;padding:4px 9px;font-size:.65rem}.university-preview{background:linear-gradient(140deg,#102b52,#2872a8)}.store-preview{background:linear-gradient(140deg,#172844,#3c74a5)}.ai-preview{background:linear-gradient(140deg,#24194e,#7e57d3)}.ai-preview i{color:#8ff2ea}.academy-preview{background:#0b1830}.academy-preview img{width:100%;height:100%;object-fit:cover;object-position:center 18%;transition:.35s}.projects-card:hover .academy-preview img{transform:scale(1.05)}.p-info{padding:1.1em}.p-category{font-size:.82em;color:#444;line-height:1.6;min-height:2.7em}.p-title{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;text-transform:none;font-weight:800;margin-top:12px;font-size:.9rem}.p-title span{color:#111}.more-details{white-space:nowrap;text-decoration:none;color:#3a6cf4;font-size:.78rem}.more-details:hover{color:#601cfc}.main{padding-top:120px;background-position:center center}.main>div{max-width:680px}.main .social-icons{margin-top:15px}
+@media (max-width:1023px){header{padding:12px 5vw}.navigation a{padding:10px 12px}.main{min-height:760px;padding:130px 8vw 80px;background-position:58% center}.main h2 span{font-size:2.5em}.main h3{font-size:1.45em}section{padding:80px 8vw}.projects-card{width:calc(50% - 24px)}.footer{gap:20px;flex-wrap:wrap}}
+@media (max-width:700px){body{font-size:14px;overflow-x:hidden}header{padding:12px 5vw;flex-wrap:wrap;gap:8px}.logo{font-size:1.35em}.navigation{display:flex;gap:2px;order:3;width:100%;justify-content:space-between}.navigation a{font-size:.82em;padding:5px 4px}.main{min-height:720px;padding:125px 7vw 55px;align-items:flex-start;background-position:64% center;background-attachment:scroll}.main h2{font-size:1.05em;text-shadow:0 2px 12px #000}.main h2 span{font-size:2.2em;line-height:1.15}.main h3{font-size:1.1em;max-width:410px;line-height:1.6}.main-btn{font-size:.92em;padding:.8em 1.5em}.social-icons a{font-size:1.4em;padding-right:18px}section{padding:65px 7vw}.title{font-size:1.8em}.content{flex-direction:column;align-items:center}.card{width:min(100%,21.25em)}.project-grid{display:flex;flex-direction:column;align-items:center;gap:6px}.projects-card{width:100%;max-width:430px;margin:12px 0}.project-visual{height:190px}.p-title{font-size:.82rem;flex-wrap:wrap}.footer{padding:1.5em 7vw;display:block;text-align:center}.footer .social-icons{margin-top:14px}}
+@media (max-width:360px){body{font-size:13px}.navigation a{font-size:.72em}.main h2 span{font-size:1.85em}.main h3{font-size:1em}.project-visual{height:175px}.p-title{display:block}.more-details{display:inline-block;margin-top:8px}}
+
+/* Final mobile hero correction: keep the programming background behind the full hero. */
+.main{background-color:#061a36;background-size:cover!important;background-repeat:no-repeat!important}
+@media (max-width:700px){.main{min-height:720px;background-color:#061a36;background-image:linear-gradient(90deg,rgba(4,20,45,.2),rgba(4,20,45,.08)),url('ahmed-raafat-programming-hero.png');background-size:cover!important;background-position:67% center!important}.main>div{width:100%}.main h2,.main h3,.main .social-icons{position:relative;z-index:1}}
